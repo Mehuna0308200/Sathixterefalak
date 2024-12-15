@@ -1,0 +1,12 @@
+version: 1.0.{build}
+image: python:3.10
+
+install:
+  - pip install pymongo python-telegram-bot pyTelegramBotAPI certifi
+
+build_script:
+  - python3 GOD.py
+
+test: off
+
+deploy: off
